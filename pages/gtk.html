@@ -148,15 +148,64 @@
   </section>
 
   <main class="font-inter">
+    <div id="modal-gtk" tabindex="-1" class="fixed backdrop-blur top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-full">
+      <div class="relative w-full max-w-md max-h-full">
+        <div class="relative bg-gray-50/90 backdrop-blur-2xl rounded-lg shadow">
+          <div class="relative flex items-center justify-center px-5 py-4 border-b border-gray-300/60 rounded-t">
+            <h3 class="text-base tracking-tight font-medium text-gray-800">
+              Detail <span class="sm:hidden">GTK</span><span class="max-sm:hidden">Guru & Tenaga Kependidikan</span> 
+            </h3>
+            <button data-modal-hide="modal-gtk" type="button" class="absolute right-3 p-1.5 inline-flex text-gray-400 items-center justify-center bg-transparent hover:bg-gray-200 hover:text-gray-800 rounded-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+              <span class="sr-only">Close modal</span>
+            </button>
+          </div>
+          <div class="p-6 space-y-6">
+            <div class="flex items-center justify-center">
+              <img class="w-24 rounded-lg" src="/dist/images/contohfoto.jpg" alt="fotogtk">
+            </div>
+            <div class="block space-y-2">
+              <div class="block pt-2.5 text-gray-800">
+                <p class="text-sm font-light leading-none">Nama</p>
+                <p class="text-base">Drs. H. Maman Sudirman, M.Pd</p>
+              </div>
+              <div class="block pt-2.5 text-gray-800 border-t border-gray-300/60">
+                <p class="text-sm font-light leading-none">NIP</p>
+                <p class="text-base">38299018908482891</p>
+              </div>
+              <div class="block pt-2.5 text-gray-800 border-t border-gray-300/60">
+                <p class="text-sm font-light leading-none">NUPTK</p>
+                <p class="text-base">-</p>
+              </div>
+              <div class="block pt-2.5 text-gray-800 border-t border-gray-300/60">
+                <p class="text-sm font-light leading-none">Jenis kelamin</p>
+                <p class="text-base">Laki-laki</p>
+              </div>
+              <div class="block pt-2.5 text-gray-800 border-t border-gray-300/60">
+                <p class="text-sm font-light leading-none">Tanggal lahir</p>
+                <p class="text-base">1990-06-24</p>
+              </div>
+              <div class="block pt-2.5 text-gray-800 border-t border-gray-300/60">
+                <p class="text-sm font-light leading-none">Pendidikan terakhir</p>
+                <p class="text-base">S1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="relative lg:max-w-full xl:max-w-screen-2xl px-4 sm:px-10 lg:px-10 xl:px-20 mx-auto flex items-center py-2 shadow shadow-gray-200">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 text-gray-500 mr-0.5">
         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
       </svg>
       <input type="text" class="p-2 bg-transparent w-full border-none focus:ring-0 text-sm sm:text-base text-gray-800 placeholder:text-gray-500" placeholder="Search guru atau tenaga kependidikan..." id="search-gtk" autocomplete="off">
     </div>
-    <ul class="flex flex-wrap justify-center mx-auto gap-x-4 sm:gap-x-6 gap-y-5 px-4 max-w-screen-xl pt-16 pb-10 sm:pt-20">
+    <ul class="flex flex-wrap justify-center mx-auto gap-x-4 sm:gap-x-6 gap-y-5 lg:gap-y-8 px-4 max-w-screen-xl pt-16 pb-10 sm:pt-20">
       <li class="w-min group">
-        <a href="#">
+        <a class="cursor-pointer" data-modal-target="modal-gtk" data-modal-toggle="modal-gtk">
           <div class="bg-gray-200/40 group-hover:bg-gray-200/80 rounded-xl p-4 w-max">
             <img src="/dist/images/contohfoto.jpg" class="w-28 sm:w-32 xl:w-36 rounded-lg" alt="fotoguru">
           </div>
@@ -166,7 +215,7 @@
         </a>
       </li>
       <li class="w-min group">
-        <a href="#">
+        <a class="cursor-pointer" data-modal-target="modal-gtk" data-modal-toggle="modal-gtk">
           <div class="bg-gray-200/40 group-hover:bg-gray-200/80 rounded-xl p-4 w-max">
             <img src="/dist/images/contohfoto.jpg" class="w-28 sm:w-32 xl:w-36 rounded-lg" alt="fotoguru">
           </div>
@@ -176,7 +225,7 @@
         </a>
       </li>
       <li class="w-min group">
-        <a href="#">
+        <a class="cursor-pointer" data-modal-target="modal-gtk" data-modal-toggle="modal-gtk">
           <div class="bg-gray-200/40 group-hover:bg-gray-200/80 rounded-xl p-4 w-max">
             <img src="/dist/images/contohfoto.jpg" class="w-28 sm:w-32 xl:w-36 rounded-lg" alt="fotoguru">
           </div>
@@ -186,7 +235,7 @@
         </a>
       </li>
       <li class="w-min group">
-        <a href="#">
+        <a class="cursor-pointer" data-modal-target="modal-gtk" data-modal-toggle="modal-gtk">
           <div class="bg-gray-200/40 group-hover:bg-gray-200/80 rounded-xl p-4 w-max">
             <img src="/dist/images/contohfoto.jpg" class="w-28 sm:w-32 xl:w-36 rounded-lg" alt="fotoguru">
           </div>
@@ -196,7 +245,7 @@
         </a>
       </li>
       <li class="w-min group">
-        <a href="#">
+        <a class="cursor-pointer" data-modal-target="modal-gtk" data-modal-toggle="modal-gtk">
           <div class="bg-gray-200/40 group-hover:bg-gray-200/80 rounded-xl p-4 w-max">
             <img src="/dist/images/contohfoto.jpg" class="w-28 sm:w-32 xl:w-36 rounded-lg" alt="fotoguru">
           </div>
@@ -206,7 +255,7 @@
         </a>
       </li>
       <li class="w-min group">
-        <a href="#">
+        <a class="cursor-pointer" data-modal-target="modal-gtk" data-modal-toggle="modal-gtk">
           <div class="bg-gray-200/40 group-hover:bg-gray-200/80 rounded-xl p-4 w-max">
             <img src="/dist/images/contohfoto.jpg" class="w-28 sm:w-32 xl:w-36 rounded-lg" alt="fotoguru">
           </div>
@@ -216,7 +265,7 @@
         </a>
       </li>
       <li class="w-min group">
-        <a href="#">
+        <a class="cursor-pointer" data-modal-target="modal-gtk" data-modal-toggle="modal-gtk">
           <div class="bg-gray-200/40 group-hover:bg-gray-200/80 rounded-xl p-4 w-max">
             <img src="/dist/images/contohfoto.jpg" class="w-28 sm:w-32 xl:w-36 rounded-lg" alt="fotoguru">
           </div>
@@ -226,7 +275,7 @@
         </a>
       </li>
       <li class="w-min group">
-        <a href="#">
+        <a class="cursor-pointer" data-modal-target="modal-gtk" data-modal-toggle="modal-gtk">
           <div class="bg-gray-200/40 group-hover:bg-gray-200/80 rounded-xl p-4 w-max">
             <img src="/dist/images/contohfoto.jpg" class="w-28 sm:w-32 xl:w-36 rounded-lg" alt="fotoguru">
           </div>
@@ -236,7 +285,7 @@
         </a>
       </li>
       <li class="w-min group">
-        <a href="#">
+        <a class="cursor-pointer" data-modal-target="modal-gtk" data-modal-toggle="modal-gtk">
           <div class="bg-gray-200/40 group-hover:bg-gray-200/80 rounded-xl p-4 w-max">
             <img src="/dist/images/contohfoto.jpg" class="w-28 sm:w-32 xl:w-36 rounded-lg" alt="fotoguru">
           </div>
@@ -246,7 +295,7 @@
         </a>
       </li>
       <li class="w-min group">
-        <a href="#">
+        <a class="cursor-pointer" data-modal-target="modal-gtk" data-modal-toggle="modal-gtk">
           <div class="bg-gray-200/40 group-hover:bg-gray-200/80 rounded-xl p-4 w-max">
             <img src="/dist/images/contohfoto.jpg" class="w-28 sm:w-32 xl:w-36 rounded-lg" alt="fotoguru">
           </div>
@@ -256,7 +305,7 @@
         </a>
       </li>
       <li class="w-min group">
-        <a href="#">
+        <a class="cursor-pointer" data-modal-target="modal-gtk" data-modal-toggle="modal-gtk">
           <div class="bg-gray-200/40 group-hover:bg-gray-200/80 rounded-xl p-4 w-max">
             <img src="/dist/images/contohfoto.jpg" class="w-28 sm:w-32 xl:w-36 rounded-lg" alt="fotoguru">
           </div>
@@ -266,7 +315,7 @@
         </a>
       </li>
       <li class="w-min group">
-        <a href="#">
+        <a class="cursor-pointer" data-modal-target="modal-gtk" data-modal-toggle="modal-gtk">
           <div class="bg-gray-200/40 group-hover:bg-gray-200/80 rounded-xl p-4 w-max">
             <img src="/dist/images/contohfoto.jpg" class="w-28 sm:w-32 xl:w-36 rounded-lg" alt="fotoguru">
           </div>
