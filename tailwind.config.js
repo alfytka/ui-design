@@ -9,6 +9,7 @@ module.exports = {
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
         sen: ['Sen', 'sans-serif'],
+        space: ['Space Grotesk', 'Arial', 'sans-serif']
       }
     },
   },
