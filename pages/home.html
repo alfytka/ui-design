@@ -147,7 +147,7 @@
   </nav>
 
   <section class="bg-gray-100/60 mt-14 md:mt-16">
-    <div class="flex flex-col max-w-screen-xl gap-5 items-center justify-center mx-auto pt-[4.5rem] pb-20 sm:py-20 px-4">
+    <div class="flex flex-col max-w-screen-xl gap-5 items-center justify-center mx-auto pb-8 sm:pb-20 pt-[4.5rem] sm:pt-24 px-4">
       <div class="flex items-center max-sm:mr-auto justify-start gap-2 rounded-full pl-2 sm:pl-4 pr-1 py-1 sm:bg-gray-100/70 sm:border border-gray-200 font-inter">
         <span class="relative flex w-2 h-2">
           <span class="animate-ping absolute inline-flex w-full h-full rounded-full bg-gray-900 opacity-75"></span>
@@ -221,29 +221,78 @@
   </section>
 
   <section class="bg-gray-100/60">
-    <div class="flex items-center gap-2 max-w-screen-xl mx-auto pt-24 px-4 lg:px-12 xl:px-24 font-inter">
+    <div class="flex items-center gap-2 max-w-screen-xl mx-auto pt-24 px-4 lg:px-12 xl:px-16 font-inter">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
         <path stroke-linecap="round" stroke-linejoin="round" d="M18.375 12.739l-7.693 7.693a4.5 4.5 0 01-6.364-6.364l10.94-10.94A3 3 0 1119.5 7.372L8.552 18.32m.009-.01l-.01.01m5.699-9.941l-7.81 7.81a1.5 1.5 0 002.112 2.13" />
       </svg>      
       <h1 class="text-xl sm:text-2xl font-semibold tracking-tight text-gray-900">Informasi disematkan</h1>
     </div>
-    <div class="flex max-md:flex-wrap items-start gap-5 lg:gap-14 xl:gap-16 max-w-screen-xl mx-auto px-4 lg:px-20 xl:px-32 pt-12 font-inter">
-      <div class="rounded-2xl border bg-gray-200/60 border-gray-200 relative">
+    <div class="max-w-screen-xl grid items-center grid-cols-1 md:grid-cols-7 gap-7 md:gap-5 lg:gap-12 px-4 lg:px-20 xl:px-24 pt-10 sm:pt-12 font-inter mx-auto">
+      <a href="/pages/post.html" class="md:col-span-4 rounded-xl sm:rounded-2xl border bg-gray-200/60 border-gray-200 relative overflow-hidden">
         <div class="p-3">
-          <img src="/dist/images/article-1.jpg" class="rounded-lg" alt="informasi-disematkan">
+          <img src="/dist/images/article-1.jpg" class="rounded-lg w-full max-h-96 object-contain" alt="informasi-disematkan">
         </div>
-        <div class="absolute bottom-0 p-5 md:p-6 rounded-b-2xl block space-y-2 bg-gray-200/70 backdrop-blur-xl">
+        <div class="absolute bottom-0 p-4 md:px-6 md:py-5 rounded-b-xl sm:rounded-b-2xl block space-y-2 bg-gray-200/70 backdrop-blur-xl">
           <h2 class="text-base sm:text-lg font-semibold text-gray-900">Pelaksanaan Daftar Ulang PPDB Tahap 2</h2>
           <p class="text-sm sm:text-base text-gray-900">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor saepe quis nulla deleniti at? Accusamus, exercitationem voluptatem? Harum, maiores accusamus.</p>
         </div>
-      </div>
-      <div class="max-md:flex max-md:mx-auto rounded-2xl bg-gray-200 relative">
-        <div class="p-3">
-          <img src="/dist/images/kepala-sekolah.jpg" class="max-md:w-48 md:w-[27rem] h-auto rounded-lg" alt="kepala-sekolah">
+      </a>
+      <div class="md:col-span-3 flex items-center w-full h-max border bg-gray-200/60 border-gray-200 rounded-xl sm:rounded-2xl overflow-hidden relative cursor-pointer" data-modal-target="modal-gtk" data-modal-toggle="modal-gtk">
+        <div>
+          <img src="/dist/images/kepala-sekolah.jpg" class="w-64 h-auto" alt="kepala-sekolah">
         </div>
-        <div class="absolute bottom-0 p-4 flex flex-wrap justify-center rounded-b-2xl bg-gray-200/70 backdrop-blur-xl">
-          <h6 class="text-sm font-semibold text-center text-gray-900">Drs. H. Maman Sudirman, M.M</h6>
-          <span class="text-sm text-gray-900">Kepala SMKN 3 Banjar</span>
+        <div class="p-3 flex flex-wrap justify-center">
+          <h6 class="text-sm sm:text-base font-semibold text-center text-gray-900">Drs. H. Maman Sudirman, M.M</h6>
+          <span class="text-sm text-gray-900 text-center">Kepala SMKN 3 Banjar</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-gtk" tabindex="-1" class="fixed backdrop-blur top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-full font-inter">
+      <div class="relative w-full max-w-md max-h-full">
+        <div class="relative bg-gray-50/90 backdrop-blur-2xl rounded-xl shadow">
+          <div class="relative flex items-center justify-center px-5 py-4 border-b border-gray-300/60 rounded-t">
+            <h3 class="text-base tracking-tight font-medium text-gray-800">
+              Detail Kepala Sekolah 
+            </h3>
+            <button data-modal-hide="modal-gtk" type="button" class="absolute right-3 p-1.5 inline-flex text-gray-400 items-center justify-center bg-transparent hover:bg-gray-200 hover:text-gray-800 rounded-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+              <span class="sr-only">Close modal</span>
+            </button>
+          </div>
+          <div class="p-6 space-y-6">
+            <div class="flex items-center justify-center">
+              <img class="w-24 rounded-lg" src="/dist/images/kepala-sekolah.jpg" alt="fotogtk">
+            </div>
+            <div class="block space-y-2">
+              <div class="block pt-2.5 text-gray-800">
+                <p class="text-sm font-light leading-none">Nama</p>
+                <p class="text-base">Drs. H. Maman Sudirman, M.Pd</p>
+              </div>
+              <div class="block pt-2.5 text-gray-800 border-t border-gray-300/60">
+                <p class="text-sm font-light leading-none">NIP</p>
+                <p class="text-base">38299018908482891</p>
+              </div>
+              <div class="block pt-2.5 text-gray-800 border-t border-gray-300/60">
+                <p class="text-sm font-light leading-none">NUPTK</p>
+                <p class="text-base">-</p>
+              </div>
+              <div class="block pt-2.5 text-gray-800 border-t border-gray-300/60">
+                <p class="text-sm font-light leading-none">Jenis kelamin</p>
+                <p class="text-base">Laki-laki</p>
+              </div>
+              <div class="block pt-2.5 text-gray-800 border-t border-gray-300/60">
+                <p class="text-sm font-light leading-none">Tanggal lahir</p>
+                <p class="text-base">1990-06-24</p>
+              </div>
+              <div class="block pt-2.5 text-gray-800 border-t border-gray-300/60">
+                <p class="text-sm font-light leading-none">Pendidikan terakhir</p>
+                <p class="text-base">S1</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -372,14 +421,32 @@
     </div>
     <div class="block max-w-screen-xl space-y-5 pt-12 pb-24 px-4 md:px-9 mx-auto font-inter">
       <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
-        <div class="overflow-hidden rounded-lg">
-          <img src="/dist/images/ki-1.jpg" class="h-48 sm:h-56 w-full object-cover rounded-lg hover:scale-105 transition ease-out" alt="gallery1">
+        <div class="block space-y-2">
+          <div class="overflow-hidden rounded-lg">
+            <img src="/dist/images/ki-1.jpg" class="h-48 sm:h-56 w-full object-cover rounded-lg hover:scale-105 transition ease-out" alt="gallery1">
+          </div>
+          <div class="flex gap-2">
+            <span class="inline-flex w-8 h-6 items-center justify-center text-sm rounded tracking-tight leading-none bg-gray-300">CC</span>
+            <span class="text-base tracking-tight text-gray-900">Kunjungan Industri 2020</span>
+          </div>
         </div>
-        <div class="overflow-hidden rounded-lg">
-          <img src="/dist/images/ki-2.jpg" class="h-48 sm:h-56 w-full object-cover rounded-lg hover:scale-105 transition ease-out" alt="gallery1">
+        <div class="block space-y-2">
+          <div class="overflow-hidden rounded-lg">
+            <img src="/dist/images/ki-2.jpg" class="h-48 sm:h-56 w-full object-cover rounded-lg hover:scale-105 transition ease-out" alt="gallery1">
+          </div>
+          <div class="flex gap-2">
+            <span class="inline-flex w-8 h-6 items-center justify-center text-sm rounded tracking-tight leading-none bg-gray-300">CC</span>
+            <span class="text-base tracking-tight text-gray-900">Kunjungan Industri 2020</span>
+          </div>
         </div>
-        <div class="overflow-hidden rounded-lg">
-          <img src="/dist/images/mpls-1.jpg" class="h-48 sm:h-56 w-full object-cover rounded-lg hover:scale-105 transition ease-out" alt="gallery1">
+        <div class="block space-y-2">
+          <div class="overflow-hidden rounded-lg">
+            <img src="/dist/images/mpls-1.jpg" class="h-48 sm:h-56 w-full object-cover rounded-lg hover:scale-105 transition ease-out" alt="gallery1">
+          </div>
+          <div class="flex gap-2">
+            <span class="inline-flex w-8 h-6 items-center justify-center text-sm rounded tracking-tight leading-none bg-gray-300">CC</span>
+            <span class="text-base tracking-tight text-gray-900">Kunjungan Industri 2020</span>
+          </div>
         </div>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-5">
