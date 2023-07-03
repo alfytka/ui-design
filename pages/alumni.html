@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TBSM - SMKN 3 Banjar</title>
+  <title>Alumni - SMKN 3 Banjar</title>
   <link rel="stylesheet" href="/dist/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
@@ -70,8 +70,8 @@
             <div class="max-lg:hidden absolute w-5 h-[3px] rounded-lg left-[20%] lg:bg-transparent lg:group-hover:bg-gray-400 transition ease-out"></div>
           </li>
           <li class="relative group">
-            <button id="programStudi" data-dropdown-toggle="programStudiNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 tracking-tight text-white rounded bg-blue-600 lg:bg-transparent lg:text-blue-700 lg:border-0 lg:p-0 lg:w-auto">Program Studi
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 ml-1 text-white lg:text-blue-700">
+            <button id="programStudi" data-dropdown-toggle="programStudiNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 tracking-tight text-gray-800 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:p-0 lg:w-auto">Program Studi
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 ml-1 text-gray-800">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
               </svg>
             </button>
@@ -97,7 +97,7 @@
                 </li>
               </ul>
             </div>
-            <div class="max-lg:hidden absolute w-5 h-[3px] rounded-lg left-[35%] lg:bg-blue-600"></div>
+            <div class="max-lg:hidden absolute w-5 h-[3px] rounded-lg left-[35%] lg:bg-transparent lg:group-hover:bg-gray-400 transition ease-out"></div>
           </li>
           <li class="relative group">
             <button id="ekstrakurikuler" data-dropdown-toggle="ekstrakurikulerId" class="flex items-center justify-between w-full py-2 pl-3 pr-4 tracking-tight text-gray-800 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:p-0 lg:w-auto">
@@ -132,49 +132,235 @@
             <div class="max-lg:hidden absolute w-5 h-[3px] rounded-lg left-1/2 -translate-x-1/2 lg:bg-transparent lg:group-hover:bg-gray-400 transition ease-out"></div>
           </li>
           <li class="relative group">
-            <a href="/pages/alumni.html" class="block py-2 pl-3 pr-4 tracking-tight text-gray-800 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:p-0">Alumni</a>
-            <div class="max-lg:hidden absolute w-5 h-[3px] rounded-lg left-1/2 -translate-x-1/2 lg:bg-transparent lg:group-hover:bg-gray-400 transition ease-out"></div>
+            <a href="/pages/alumni.html" class="block py-2 pl-3 pr-4 tracking-tight text-white rounded bg-blue-600 lg:bg-transparent lg:text-blue-700 lg:p-0">Alumni</a>
+            <div class="max-lg:hidden absolute w-5 h-[3px] rounded-lg left-1/2 -translate-x-1/2 lg:bg-blue-600"></div>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <article class="mt-24 sm:mt-36 mb-20 sm:mb-24 lg:mt-40">
-    <div class="flex max-sm:flex-wrap-reverse max-w-screen-xl gap-x-5 md:gap-x-8 lg:gap-x-10 xl:gap-x-12 mx-auto px-4 md:px-10 lg:px-14 xl:px-20 font-inter">
-      <img class="rounded-lg max-w-full sm:max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg" src="/dist/images/tbsm-1.jpg" alt="">
-      <div class="title max-w-md xl:max-w-lg mt-3 lg:mt-5 max-sm:mb-5">
-        <span class="px-2 py-1 rounded-md text-sm bg-gray-100 border border-gray-200 text-gray-800">Program Studi TBSM</span>
-        <h1 class="text-xl sm:text-2xl lg:text-3xl font-semibold my-3 text-gray-700 tracking-tight">Teknik dan Bisnis Sepeda Motor (TBSM) SMK Negeri 3 Banjar</h1>
-        <div class="flex flex-wrap text-sm sm:text-base items-center mt-3 md:mt-6 divide-x-2 divide-gray-300  leading-tight gap-x-3">
-          <span class="text-blue-600">Posted by Admin</span>
-          <span class="pl-3 text-gray-700">10 Dec 2020</span>
+  <section class="bg-gradient-to-r from-gray-100 via-gray-50 to-gray-100 border-b border-gray-200 mt-14 md:mt-16 py-20 sm:py-24">
+    <div class="relative flex flex-col gap-y-7 items-center justify-center max-w-screen-xl mx-auto px-4 font-inter">
+      <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-gray-800 text-center">Alumni SMK Negeri 3 Banjar</h1>
+      <p class="text-base text-gray-800 max-w-xl text-center sm:leading-7">Berikut merupakan beberapa alumni yang telah mengikuti atau tamat dari Sekolah Menengah Kejuruan Negeri 3 Banjar</p>
+    </div>
+  </section>
+
+  <main class="font-inter">
+    <div id="modal-alumni" tabindex="-1" class="fixed backdrop-blur top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-full font-inter">
+      <div class="relative w-full max-w-md max-h-full">
+        <div class="relative bg-gray-50/90 backdrop-blur-2xl rounded-xl shadow">
+          <div class="relative flex items-center justify-center px-5 py-4 border-b border-gray-300/60 rounded-t">
+            <h3 class="text-base tracking-tight font-medium text-gray-800">
+              Detail Alumni 
+            </h3>
+            <button data-modal-hide="modal-alumni" type="button" class="absolute right-3 p-1.5 inline-flex text-gray-400 items-center justify-center bg-transparent hover:bg-gray-200 hover:text-gray-800 rounded-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+              <span class="sr-only">Close modal</span>
+            </button>
+          </div>
+          <div class="p-6 space-y-6">
+            <div class="flex items-center justify-center">
+              <img class="w-24 rounded-lg" src="/dist/images/contohfoto.jpg" alt="fotoalumni">
+            </div>
+            <div class="block space-y-2">
+              <div class="block pt-2.5 text-gray-800">
+                <p class="text-sm font-light leading-none">Nama</p>
+                <p class="text-base">Muhamad Adam</p>
+              </div>
+              <div class="block pt-2.5 text-gray-800 border-t border-gray-300/60">
+                <p class="text-sm font-light leading-none">Jenis kelamin</p>
+                <p class="text-base">Laki-laki</p>
+              </div>
+              <div class="block pt-2.5 text-gray-800 border-t border-gray-300/60">
+                <p class="text-sm font-light leading-none">Tanggal lahir</p>
+                <p class="text-base">2003-06-24</p>
+              </div>
+              <div class="block pt-2.5 text-gray-800 border-t border-gray-300/60">
+                <p class="text-sm font-light leading-none">Tahun lulus</p>
+                <p class="text-base">2023</p>
+              </div>
+              <div class="block pt-2.5 text-gray-800 border-t border-gray-300/60">
+                <p class="text-sm font-light leading-none">Perusahaan tempat bekerja</p>
+                <p class="text-base">Google Inc. - Product Manager</p>
+              </div>
+              <div class="block pt-2.5 text-gray-800 border-t border-gray-300/60">
+                <p class="text-sm font-light leading-none">Pendidikan terakhir</p>
+                <p class="text-base">S1</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="typography mt-10 sm:mt-16 max-w-3xl flex flex-wrap max-sm:px-4 max-lg:px-10 mx-auto font-inter">
-      <p class="text-base leading-7 text-gray-800">
-        Teknik dan Bisnis Sepeda Motor adalah kompetensi keahlian pada Bidang Studi Keahlian Teknologi dan Rekayasa Program Studi Keahlian Teknik Otomotif yang menekankan pada keterampilan pelayanan jasa mekanik kendaraan sepeda motor roda dua. Kompetensi Keahlian Teknik dan Bisnis Sepeda Motor menyiapkan peserta didik untuk bekerja pada bidang pekerjaan yang dikelola oleh badan, instansi atau perusahaan maupun pribadi (wirausaha).
-      </p>
-      <p class="text-base leading-7 text-gray-800 pt-5">
-        Tujuan Kompetensi Keahlian Teknik dan Bisnis Sepeda Motor secara umum mengacu pada isi Undang Undang Sistem Pendidikan Nasional (UU SPN) pasal 3 mengenai Tujuan Pendidikan Nasional dan penjelasan pasal 15 yang menyebutkan bahwa pendidikan kejuruan merupakan pendidikan menengah yang mempersiapkan peserta didik terutama untuk bekerja dalam bidang tertentu.
-      </p>
-      <p class="text-base leading-7 font-semibold text-gray-800 pt-5">
-        TUJUAN KOMPETENSI KEAHLIAN TEKNIK DAN BISINIS SEPEDA MOTOR
-      </p>
-      <p class="text-base leading-7 text-gray-800 pt-5">
-        Secara khusus tujuan kompetensi keahlian Teknik dan Bisnis Sepeda Motor adalah membekali peserta didik dengan keterampilan, pengetahuan, dan sikap yaitu:
-      </p>
-      <ol class="text-base leading-7 text-gray-800 list-decimal pl-6 sm:pl-10 pt-5">
-        <li>Meningkatkan keimanan dan ketaqwaan peserta didik,</li>
-        <li>Mendidik peserta diklat agar menjadi warga negara yang bertanggungjawab,</li>
-        <li>Mendidik peserta diklat agar dapat menerapkan hidup sehat, memiliki wawasan pengetahuan dan seni,</li>
-        <li>Mendidik peserta diklat dengan keahlian dan keterampilan agar kompeten dalam bidang keahlian teknik sepeda motor, agar dapat bekerja baik secara mandiri atau mengisi lowongan pekerjaan yang ada di dunia usaha dan dunia industri sebagai tenaga kerja tingkat menengah,</li>
-        <li>Mendidik peserta diklat agar mampu memilih karier, berkompetisi dan mengembangkan sikap profesional,</li>
-        <li>Membekali peserta diklat dengan ilmu pengetahuan dan keterampilan sebagai bekal bagi yang berminat untuk melanjutkan pendidikan ke perguruan tinggi atau universitas</li>
-      </ol>
+
+    <div class="relative lg:max-w-full xl:max-w-screen-2xl px-4 sm:px-10 lg:px-10 xl:px-20 mx-auto flex items-center py-2 shadow shadow-gray-200">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 text-gray-500 mr-0.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+      </svg>
+      <input type="text" class="p-2 bg-transparent w-full border-none focus:ring-0 text-sm sm:text-base text-gray-800 placeholder:text-gray-500" placeholder="Search alumni..." id="search-alumni" autocomplete="off">
     </div>
-  </article>
+    <ul class="flex flex-wrap justify-center mx-auto gap-x-4 sm:gap-x-6 gap-y-5 lg:gap-y-8 px-4 max-w-screen-xl pt-16 pb-10 sm:pt-20">
+      <li class="w-min group">
+        <a class="cursor-pointer" data-modal-target="modal-alumni" data-modal-toggle="modal-alumni">
+          <div class="bg-gray-200/40 group-hover:bg-gray-200/80 rounded-xl p-4 w-max">
+            <img src="/dist/images/contohfoto.jpg" class="w-28 sm:w-32 xl:w-36 rounded-lg" alt="fotoguru">
+          </div>
+          <div class="flex items-center justify-center py-4">
+            <span class="text-base font-medium text-gray-800 group-hover:text-black text-center leading-5">Agus Gandi, M.Pd</span>
+          </div>
+        </a>
+      </li>
+      <li class="w-min group">
+        <a class="cursor-pointer" data-modal-target="modal-alumni" data-modal-toggle="modal-alumni">
+          <div class="bg-gray-200/40 group-hover:bg-gray-200/80 rounded-xl p-4 w-max">
+            <img src="/dist/images/contohfoto.jpg" class="w-28 sm:w-32 xl:w-36 rounded-lg" alt="fotoguru">
+          </div>
+          <div class="flex items-center justify-center py-4">
+            <span class="text-base font-medium text-gray-800 group-hover:text-black text-center leading-5">Apri Nurardiansyah, S.Pd</span>
+          </div>
+        </a>
+      </li>
+      <li class="w-min group">
+        <a class="cursor-pointer" data-modal-target="modal-alumni" data-modal-toggle="modal-alumni">
+          <div class="bg-gray-200/40 group-hover:bg-gray-200/80 rounded-xl p-4 w-max">
+            <img src="/dist/images/contohfoto.jpg" class="w-28 sm:w-32 xl:w-36 rounded-lg" alt="fotoguru">
+          </div>
+          <div class="flex items-center justify-center py-4">
+            <span class="text-base font-medium text-gray-800 group-hover:text-black text-center leading-5">Maman Suparman, S.T</span>
+          </div>
+        </a>
+      </li>
+      <li class="w-min group">
+        <a class="cursor-pointer" data-modal-target="modal-alumni" data-modal-toggle="modal-alumni">
+          <div class="bg-gray-200/40 group-hover:bg-gray-200/80 rounded-xl p-4 w-max">
+            <img src="/dist/images/contohfoto.jpg" class="w-28 sm:w-32 xl:w-36 rounded-lg" alt="fotoguru">
+          </div>
+          <div class="flex items-center justify-center py-4">
+            <span class="text-base font-medium text-gray-800 group-hover:text-black text-center leading-5">Arif Rahman Hakim, S.Pd</span>
+          </div>
+        </a>
+      </li>
+      <li class="w-min group">
+        <a class="cursor-pointer" data-modal-target="modal-alumni" data-modal-toggle="modal-alumni">
+          <div class="bg-gray-200/40 group-hover:bg-gray-200/80 rounded-xl p-4 w-max">
+            <img src="/dist/images/contohfoto.jpg" class="w-28 sm:w-32 xl:w-36 rounded-lg" alt="fotoguru">
+          </div>
+          <div class="flex items-center justify-center py-4">
+            <span class="text-base font-medium text-gray-800 group-hover:text-black text-center leading-5">Azka Dalila Nurlimatin, S.Pd</span>
+          </div>
+        </a>
+      </li>
+      <li class="w-min group">
+        <a class="cursor-pointer" data-modal-target="modal-alumni" data-modal-toggle="modal-alumni">
+          <div class="bg-gray-200/40 group-hover:bg-gray-200/80 rounded-xl p-4 w-max">
+            <img src="/dist/images/contohfoto.jpg" class="w-28 sm:w-32 xl:w-36 rounded-lg" alt="fotoguru">
+          </div>
+          <div class="flex items-center justify-center py-4">
+            <span class="text-base font-medium text-gray-800 group-hover:text-black text-center leading-5">Bambang Budi Yitno, S.Pd</span>
+          </div>
+        </a>
+      </li>
+      <li class="w-min group">
+        <a class="cursor-pointer" data-modal-target="modal-alumni" data-modal-toggle="modal-alumni">
+          <div class="bg-gray-200/40 group-hover:bg-gray-200/80 rounded-xl p-4 w-max">
+            <img src="/dist/images/contohfoto.jpg" class="w-28 sm:w-32 xl:w-36 rounded-lg" alt="fotoguru">
+          </div>
+          <div class="flex items-center justify-center py-4">
+            <span class="text-base font-medium text-gray-800 group-hover:text-black text-center leading-5">Dian Nugraha, S.T</span>
+          </div>
+        </a>
+      </li>
+      <li class="w-min group">
+        <a class="cursor-pointer" data-modal-target="modal-alumni" data-modal-toggle="modal-alumni">
+          <div class="bg-gray-200/40 group-hover:bg-gray-200/80 rounded-xl p-4 w-max">
+            <img src="/dist/images/contohfoto.jpg" class="w-28 sm:w-32 xl:w-36 rounded-lg" alt="fotoguru">
+          </div>
+          <div class="flex items-center justify-center py-4">
+            <span class="text-base font-medium text-gray-800 group-hover:text-black text-center leading-5">Jamaludin, S.Pd.I</span>
+          </div>
+        </a>
+      </li>
+      <li class="w-min group">
+        <a class="cursor-pointer" data-modal-target="modal-alumni" data-modal-toggle="modal-alumni">
+          <div class="bg-gray-200/40 group-hover:bg-gray-200/80 rounded-xl p-4 w-max">
+            <img src="/dist/images/contohfoto.jpg" class="w-28 sm:w-32 xl:w-36 rounded-lg" alt="fotoguru">
+          </div>
+          <div class="flex items-center justify-center py-4">
+            <span class="text-base font-medium text-gray-800 group-hover:text-black text-center leading-5">Indra Irawan, S.Kom</span>
+          </div>
+        </a>
+      </li>
+      <li class="w-min group">
+        <a class="cursor-pointer" data-modal-target="modal-alumni" data-modal-toggle="modal-alumni">
+          <div class="bg-gray-200/40 group-hover:bg-gray-200/80 rounded-xl p-4 w-max">
+            <img src="/dist/images/contohfoto.jpg" class="w-28 sm:w-32 xl:w-36 rounded-lg" alt="fotoguru">
+          </div>
+          <div class="flex items-center justify-center py-4">
+            <span class="text-base font-medium text-gray-800 group-hover:text-black text-center leading-5">Hasan Sumega, S.Pd</span>
+          </div>
+        </a>
+      </li>
+      <li class="w-min group">
+        <a class="cursor-pointer" data-modal-target="modal-alumni" data-modal-toggle="modal-alumni">
+          <div class="bg-gray-200/40 group-hover:bg-gray-200/80 rounded-xl p-4 w-max">
+            <img src="/dist/images/contohfoto.jpg" class="w-28 sm:w-32 xl:w-36 rounded-lg" alt="fotoguru">
+          </div>
+          <div class="flex items-center justify-center py-4">
+            <span class="text-base font-medium text-gray-800 group-hover:text-black text-center leading-5">Sugianto, S.Pd</span>
+          </div>
+        </a>
+      </li>
+      <li class="w-min group">
+        <a class="cursor-pointer" data-modal-target="modal-alumni" data-modal-toggle="modal-alumni">
+          <div class="bg-gray-200/40 group-hover:bg-gray-200/80 rounded-xl p-4 w-max">
+            <img src="/dist/images/contohfoto.jpg" class="w-28 sm:w-32 xl:w-36 rounded-lg" alt="fotoguru">
+          </div>
+          <div class="flex items-center justify-center py-4">
+            <span class="text-base font-medium text-gray-800 group-hover:text-black text-center leading-5">Wahyu Suryaman, SE.,S.T</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+    <div class="flex pagination max-w-screen-xl justify-center mx-auto px-4 pb-16">
+      <ul class="inline-flex items-center gap-1">
+        <li>
+          <a href="#" class="block p-2 mr-1 sm:mr-2 leading-tight text-gray-500 bg-gray-50 border border-gray-300 rounded-full hover:bg-gray-100 hover:text-gray-800">
+            <span class="sr-only">Previous</span>
+            <svg fill="none" class="w-5 h-5 p-0.5" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex w-[38px] h-[38px] items-center justify-center leading-tight text-gray-500 bg-gray-50 border rounded-full border-gray-300 hover:bg-gray-100 hover:text-gray-800">1</a>
+        </li>
+        <li>
+          <a href="#" class="z-10 flex w-[38px] h-[38px] items-center justify-center leading-tight text-white border rounded-full border-blue-700 bg-blue-600">2</a>
+        </li>
+        <li>
+          <a href="#" class="flex w-[38px] h-[38px] items-center justify-center leading-tight text-gray-500 bg-gray-50 border rounded-full border-gray-300 hover:bg-gray-100 hover:text-gray-800">...</a>
+        </li>
+        <li>
+          <a href="#" class="flex w-[38px] h-[38px] items-center justify-center leading-tight text-gray-500 bg-gray-50 border rounded-full border-gray-300 hover:bg-gray-100 hover:text-gray-800">6</a>
+        </li>
+        <li>
+          <a href="#" class="flex w-[38px] h-[38px] items-center justify-center leading-tight text-gray-500 bg-gray-50 border rounded-full border-gray-300 hover:bg-gray-100 hover:text-gray-800">7</a>
+        </li>
+        <li>
+          <a href="#" class="block p-2 ml-1 sm:ml-2 leading-tight text-gray-500 bg-gray-50 border border-gray-300 rounded-full hover:bg-gray-100 hover:text-gray-800">
+            <span class="sr-only">Next</span>
+            <svg fill="none" class="w-5 h-5 p-0.5" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </main>
 
   <footer class="bg-gray-100">
     <div class="max-w-screen-xl px-4 sm:px-14 py-20 mx-auto font-inter">
