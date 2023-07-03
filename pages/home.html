@@ -299,9 +299,29 @@
   </section>
 
   <section class="bg-gray-100/60">
-    <div class="flex gap-3 sm:gap-4 max-w-screen-xl mx-auto pt-24 px-4 font-inter">
-      <div class="h-7 sm:h-8 w-[3px] sm:w-1 rounded-tr-lg rounded-br-lg bg-gray-800"></div>
-      <h1 class="text-xl sm:text-2xl font-semibold tracking-tight text-gray-900">Informasi & Article</h1>
+    <div class="flex items-center justify-between max-w-screen-xl mx-auto pt-24 px-4 font-inter">
+      <div class="flex gap-3 sm:gap-4">
+        <div class="h-7 sm:h-8 w-[3px] sm:w-1 rounded-tr-lg rounded-br-lg bg-gray-800"></div>
+        <h1 class="text-xl sm:text-2xl font-semibold tracking-tight text-gray-900">Informasi & Article</h1>
+      </div>
+      <div class="flex items-center justify-end gap-3">
+        <span class="max-sm:hidden text-base text-gray-800">Category</span>
+        <button data-dropdown-toggle="category-menu" class="p-2 border rounded-full bg-gray-200/60 border-gray-200 focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-blue-700">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
+          </svg>
+        </button>
+        <div id="category-menu" class="z-10 hidden w-44 font-normal bg-gray-100 border border-gray-200 divide-y divide-gray-200 rounded-lg">
+          <ul class="py-2 text-sm text-gray-700">
+            <li>
+              <a href="/pages/post/informasi.html" class="block px-4 py-2 mx-2 rounded-md hover:bg-blue-500 hover:text-gray-50">Informasi</a>
+            </li>
+            <li>
+              <a href="/pages/post/article.html" class="block px-4 py-2 mx-2 rounded-md hover:bg-blue-500 hover:text-gray-50">Article</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div class="flex max-w-screen-xl mx-auto pt-12 px-4 font-inter overflow-x-auto scrollbar-hidden">
       <ul class="flex gap-4 sm:gap-5">
